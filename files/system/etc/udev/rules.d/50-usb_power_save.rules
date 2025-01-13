@@ -1,0 +1,5 @@
+# Whitelist for USB autosuspend
+# ASUSTek Computer, Inc. AURA LED Controller
+ACTION=="add", SUBSYSTEM=="usb", TEST=="power/control", ATTR{idVendor}=="0b05", ATTR{idProduct}=="19af", ATTR{power/control}="auto"
+# Yubico.com Yubikey 4/5 U2F+CCID
+ACTION=="add", SUBSYSTEM=="usb", TEST=="power/control", ATTR{idVendor}=="1050", ATTR{idProduct}=="0406", ATTR{power/control}="auto"

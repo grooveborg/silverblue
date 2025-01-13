@@ -1,0 +1,9 @@
+[org/gnome/Ptyxis/Profiles/2871e8027773ae74d6c87a5f659bbc74]
+custom-command='/usr/bin/fish'
+label='Fish Profile'
+palette='dracula'
+use-custom-command=true
+
+[org/gnome/Ptyxis/Profiles/6f08121962231f1d28aeb5b8674ea4cd]
+label='Bash Profile'
+palette='dracula'

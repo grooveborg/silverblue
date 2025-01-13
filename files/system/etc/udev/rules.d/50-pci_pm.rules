@@ -1,0 +1,2 @@
+# Enable PCI Runtime Power Management for all devices
+SUBSYSTEM=="pci", ATTR{power/control}="auto"

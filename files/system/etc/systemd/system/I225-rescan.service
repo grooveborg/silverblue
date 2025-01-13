@@ -1,0 +1,11 @@
+[Unit]
+Description=Restore Intel I225-V Ethernet after wake from ErP enabled suspend
+After=suspend.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash -c 'echo 1 > /sys/bus/pci/devices/0000:08:00.0/remove'
+ExecStart=/usr/bin/bash -c 'echo 1 > /sys/bus/pci/rescan'
+
+[Install]
+WantedBy=suspend.target

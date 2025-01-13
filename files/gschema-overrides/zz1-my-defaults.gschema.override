@@ -1,0 +1,80 @@
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/gradient-zenith/wave-layer-7-orange.png'
+picture-uri-dark='file:///usr/share/backgrounds/gradient-zenith/wave-layer-7-purple.png'
+
+[org.gnome.desktop.interface]
+accent-color='purple'
+color-scheme='prefer-dark'
+font-name='Inter Variable 10.5'
+gtk-theme='adw-gtk3-dark'
+monospace-font-name='MesloLGSDZ Nerd Font 11'
+
+[org.gnome.desktop.privacy]
+remove-old-temp-files=true
+
+[org.gnome.desktop.screensaver]
+lock-enabled=false
+picture-uri='file:///usr/share/backgrounds/gradient-zenith/wave-layer-7-purple.png'
+
+[org.gnome.desktop.search-providers]
+enabled=['org.gnome.Calculator.desktop']
+
+[org.gnome.desktop.search-providers]
+disabled=['org.gnome.Software.desktop']
+
+[org.gnome.desktop.wm.preferences]
+focus-mode='sloppy'
+
+[org.gnome.mutter]
+check-alive-timeout=uint32 20000
+
+[org.gnome.Ptyxis]
+cursor-shape='underline'
+default-profile-uuid='2871e8027773ae74d6c87a5f659bbc74'
+profile-uuids=['2871e8027773ae74d6c87a5f659bbc74', '6f08121962231f1d28aeb5b8674ea4cd']
+
+[org.gnome.settings-daemon.plugins.color]
+night-light-enabled=true
+night-light-last-coordinates=(40.78, -73.97)
+
+[org.gnome.shell]
+enabled-extensions=['bottom-overview@fthx', 'caffeine@patapon.info', 'clipboard-history@alexsaveau.dev', 'dash-to-dock@micxgx.gmail.com', 'gsconnect@andyholmes.github.io', 'just-perfection-desktop@just-perfection', 'mprisLabel@moon-0xff.github.com', 'space-bar@luchrioh', 'tilingshell@ferrarodomenico.com', 'weatheroclock@CleoMenezesJr.github.io']
+favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'com.visualstudio.code.desktop', 'md.obsidian.Obsidian.desktop', 'com.usebottles.bottles.desktop', 'com.valvesoftware.Steam.desktop', 'com.heroicgameslauncher.hgl.desktop', 'com.spotify.Client.desktop']
+
+[org.gnome.shell.weather]
+locations=[<(uint32 2, <('New York City, Central Park', 'KNYC', false, [(0.71180344078725644, -1.2909618758762367)], @a(dd) [])>)>]
+
+[org.gnome.shell.extensions.caffeine]
+nightlight-control='always'
+screen-blank='always'
+
+[org.gnome.shell.extensions.dash-to-dock]
+dock-position='LEFT'
+running-indicator-dominant-color=true
+running-indicator-style='DASHES'
+transparency-mode='DYNAMIC'
+
+[org.gnome.shell.extensions.just-perfection]
+clock-menu-position=1
+clock-menu-position-offset=9
+events-button=false
+power-icon=false
+quick-settings-dark-mode=false
+startup-status=0
+window-demands-attention-focus=true
+workspace-thumbnail-to-main-view=true
+world-clock=false
+
+[org.gnome.shell.extensions.mpris-label]
+auto-switch-to-most-recent=true
+extension-index=4
+extension-place='left'
+mpris-sources-blacklist='Play Timer'
+
+[org.gnome.shell.extensions.tilingshell]
+enable-autotiling=true
+inner-gaps=uint32 8
+layouts-json='[{"id":"Layout 1","tiles":[{"x":0,"y":0,"width":0.5,"height":1,"groups":[1]},{"x":0.5,"y":0,"width":0.5,"height":1,"groups":[1]}]},{"id":"Layout 2","tiles":[{"x":0,"y":0,"width":0.5,"height":1,"groups":[1]},{"x":0.5,"y":0,"width":0.5,"height":0.5,"groups":[2,1]},{"x":0.5,"y":0.5,"width":0.5,"height":0.5,"groups":[2,1]}]},{"id":"Layout 3","tiles":[{"x":0,"y":0,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0,"y":0.5,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[2,3]},{"x":0.78,"y":0,"width":0.22,"height":0.5,"groups":[3,4]},{"x":0.78,"y":0.5,"width":0.22,"height":0.5,"groups":[3,4]}]},{"id":"Layout 4","tiles":[{"x":0,"y":0,"width":0.22,"height":1,"groups":[1]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[1,2]},{"x":0.78,"y":0,"width":0.22,"height":1,"groups":[2]}]},{"id":"Layout 5","tiles":[{"x":0,"y":0,"width":0.33,"height":1,"groups":[1]},{"x":0.33,"y":0,"width":0.67,"height":1,"groups":[1]}]},{"id":"Layout 6","tiles":[{"x":0,"y":0,"width":0.67,"height":1,"groups":[1]},{"x":0.67,"y":0,"width":0.33,"height":1,"groups":[1]}]}]'
+
+[org.gtk.settings.file-chooser]
+clock-format='24h'

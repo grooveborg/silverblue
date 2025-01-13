@@ -1,0 +1,13 @@
+[Unit]
+Description=SMB home share on NAS
+After=network-online.target
+Wants=network-online.target
+
+[Mount]
+What=//nas/home
+Where=/run/media/david/home
+Type=cifs
+Options=credentials=/home/david/.smbcredentials,nobrl,uid=1000,gid=1000,vers=3.0
+
+[Install]
+WantedBy=multi-user.target

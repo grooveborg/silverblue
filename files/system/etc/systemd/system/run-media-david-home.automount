@@ -1,0 +1,8 @@
+[Unit]
+Description=SMB home share on NAS
+
+[Automount]
+Where=/run/media/david/home
+
+[Install]
+WantedBy=multi-user.target
