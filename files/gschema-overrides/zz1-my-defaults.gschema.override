@@ -45,8 +45,10 @@ favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org
 locations=[<(uint32 2, <('New York City, Central Park', 'KNYC', false, [(0.71180344078725644, -1.2909618758762367)], @a(dd) [])>)>]
 
 [org.gnome.shell.extensions.caffeine]
+inhibit-apps=['de.haeckerfelix.Shortwave.desktop', 'com.spotify.Client.desktop', 'com.github.taiko2k.tauonmb.desktop']
 nightlight-control='always'
-screen-blank='always'
+screen-blank='for-apps'
+trigger-apps-mode='on-focus'
 
 [org.gnome.shell.extensions.dash-to-dock]
 dock-position='LEFT'
