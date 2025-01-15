@@ -46,11 +46,6 @@ echo "Installing chezmoi"
 wget -nv https://github.com/twpayne/chezmoi/releases/latest/download/chezmoi-linux-amd64 -O /usr/bin/chezmoi
 chmod 755 /usr/bin/chezmoi
 
-# Install LACT
-api_url=https://api.github.com/repos/ilya-zlobintsev/LACT/releases/latest
-download_url=$(curl -fsS $api_url | grep -o "https.*libadwaita.*$os_version.rpm")
-rpm-ostree install "$download_url"
-
 # Install The Logfile Navigator
 echo "Installing lnav"
 api_url=https://api.github.com/repos/tstack/lnav/releases/latest
