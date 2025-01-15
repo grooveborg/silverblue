@@ -1,0 +1,7 @@
+[org/gnome/shell/extensions/paperwm]
+horizontal-margin=10
+selection-border-size=2
+vertical-margin=10
+vertical-margin-bottom=10
+window-gap=10
+winprops=['{"wm_class":"*","preferredWidth":"50%"}', '{"wm_class":"com.github.taiko2k.tauonmb","scratch_layer":true}', '{"wm_class":"de.haeckerfelix.Shortwave","scratch_layer":true}', '{"wm_class":"spotify","scratch_layer":true}']
