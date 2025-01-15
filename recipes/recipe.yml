@@ -19,7 +19,7 @@ modules:
 
   - type: rpm-ostree
     repos:
-      - https://download.opensuse.org/repositories/shells:fish:beta:4/Fedora_41/shells:fish:beta:4.repo
+      - https://download.opensuse.org/repositories/shells:fish:beta:4/Fedora_%OS_VERSION%/shells:fish:beta:4.repo
       - https://negativo17.org/repos/fedora-multimedia.repo
       - https://negativo17.org/repos/fedora-rar.repo
     install:
