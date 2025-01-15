@@ -22,6 +22,7 @@ modules:
       - https://download.opensuse.org/repositories/shells:fish:beta:4/Fedora_%OS_VERSION%/shells:fish:beta:4.repo
       - https://negativo17.org/repos/fedora-multimedia.repo
       - https://negativo17.org/repos/fedora-rar.repo
+      - https://copr.fedorainfracloud.org/coprs/ilyaz/LACT/repo/fedora-%OS_VERSION%/ilyaz-LACT-fedora-%OS_VERSION%.repo
     install:
       - adw-gtk3-theme
       - age
@@ -39,6 +40,7 @@ modules:
       - gnome-shell-extension-gsconnect # gnome-extensions module cannot be used due to hard-coded user locations
       - heif-pixbuf-loader
       - inxi
+      - lact
       - libfdk-aac
       - libva-utils
       - nautilus-python
@@ -183,6 +185,7 @@ modules:
       enabled:
         - flatpak-update.timer
         - I225-rescan.service
+        - lactd.service
         - rpm-ostreed-automatic.timer
         - run-media-david-home.automount
         - suspend@david.service
