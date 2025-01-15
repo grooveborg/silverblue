@@ -14,14 +14,8 @@ stages:
     from: docker.io/library/fedora
     modules:
       - type: script
-        snippets:
-          - dnf -y install boost-devel cmake gcc-c++ git libevdev-devel systemd-devel yaml-cpp-devel
-          - git clone --depth 1 https://gitlab.com/interception/linux/tools.git interception-tools
-          - cd interception-tools && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build
-          - mkdir /out && mv /interception-tools/build/{intercept,mux,udevmon,uinput} /out
-          - git clone --depth 1 https://gitlab.com/interception/linux/plugins/caps2esc.git
-          - cd caps2esc && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build
-          - mv /caps2esc/build/caps2esc /out
+        scripts:
+          - build-caps2esc.sh
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
