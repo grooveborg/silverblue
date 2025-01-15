@@ -134,6 +134,7 @@ modules:
         - com.usebottles.bottles
         - com.valvesoftware.Steam
         - com.visualstudio.code
+        - de.haeckerfelix.Fragments
         - de.haeckerfelix.Shortwave
         - dev.geopjr.Collision
         - io.github.efogdev.mpris-timer
@@ -148,7 +149,6 @@ modules:
         - org.gtk.Gtk3theme.adw-gtk3-dark
         - org.mozilla.firefox
         - org.nickvision.tubeconverter
-        - org.qbittorrent.qBittorrent
         - org.ryujinx.Ryujinx
         - org.sabnzbd.sabnzbd
         - page.tesk.Refine
