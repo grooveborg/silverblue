@@ -9,9 +9,28 @@ description: This is my personal OS image.
 base-image: quay.io/fedora-ostree-desktops/silverblue
 image-version: 41 # latest is also supported if you want new updates ASAP
 
+stages:
+  - name: caps2esc
+    from: docker.io/library/fedora
+    modules:
+      - type: script
+        snippets:
+          - dnf -y install boost-devel cmake gcc-c++ git libevdev-devel systemd-devel yaml-cpp-devel
+          - git clone --depth 1 https://gitlab.com/interception/linux/tools.git interception-tools
+          - cd interception-tools && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build
+          - mkdir /out && mv /interception-tools/build/{intercept,mux,udevmon,uinput} /out
+          - git clone --depth 1 https://gitlab.com/interception/linux/plugins/caps2esc.git
+          - cd caps2esc && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build
+          - mv /caps2esc/build/caps2esc /out
+
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: copy
+    from: caps2esc
+    src: /out
+    dest: /usr/bin/
+
   - type: files
     files:
       - source: system
@@ -61,6 +80,7 @@ modules:
       - traceroute
       - vim
       - wl-clipboard
+      - yaml-cpp # interception-tools dependency
       - yubikey-manager
       - zstd
     remove:
@@ -182,6 +202,7 @@ modules:
   - type: systemd
     system:
       enabled:
+        - caps2esc.service
         - flatpak-update.timer
         - I225-rescan.service
         - lactd.service

@@ -1,0 +1,11 @@
+[Unit]
+Description=Monitor input devices for launching tasks
+
+[Service]
+ExecStart=/usr/bin/udevmon -c /etc/caps2esc.yaml
+Nice=-20
+OOMScoreAdjust=-1000
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
