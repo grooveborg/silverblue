@@ -157,6 +157,7 @@ modules:
       - Dash to Dock
       - Just Perfection
       - Media Label and Controls (Mpris Label)
+      - PaperWM
       - 5470 # Weather O'Clock
 
   - type: script
