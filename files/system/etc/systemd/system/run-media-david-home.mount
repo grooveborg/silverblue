@@ -8,7 +8,7 @@ What=//nas/home
 Where=/run/media/david/home
 Type=cifs
 # nobrl fixes database error when accessing calibre library
-Options=credentials=/home/david/.smbcredentials,nobrl,uid=1000,gid=1000
+Options=credentials=/home/david/.smbcredentials,nobrl,iocharset=utf8,uid=1000,gid=1000
 
 [Install]
 WantedBy=multi-user.target
