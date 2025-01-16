@@ -73,6 +73,7 @@ modules:
       - tmux
       - traceroute
       - vim
+      - vim-default-editor
       - wl-clipboard
       - yaml-cpp # interception-tools dependency
       - yubikey-manager
