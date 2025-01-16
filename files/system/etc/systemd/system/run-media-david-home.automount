@@ -1,5 +1,5 @@
 [Unit]
-Description=SMB home share on NAS
+Description=Automount home share on NAS
 
 [Automount]
 Where=/run/media/david/home

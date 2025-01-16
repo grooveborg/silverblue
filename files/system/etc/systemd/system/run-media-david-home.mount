@@ -1,5 +1,5 @@
 [Unit]
-Description=SMB home share on NAS
+Description=Mount home share on NAS
 After=network-online.target
 Wants=network-online.target
 
