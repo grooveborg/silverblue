@@ -99,6 +99,8 @@ modules:
       - libpostproc-free
       - libswresample-free
       - libswscale-free
+      - nano
+      - nano-default-editor
       - totem-video-thumbnailer
 
   - type: default-flatpaks
