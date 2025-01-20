@@ -1,0 +1,26 @@
+name: Delete old workflow runs and packages
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+# Run monthly, at 00:00 on the 1st day of month.
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 30
+          keep_minimum_runs: 6
+      - name: Delete packages
+        uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'silverblue'
+          package-type: 'container'
+          min-versions-to-keep: 10
