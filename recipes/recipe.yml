@@ -140,6 +140,7 @@ modules:
         - de.haeckerfelix.Fragments
         - de.haeckerfelix.Shortwave
         - dev.geopjr.Collision
+        - dev.qwery.AddWater
         - io.github.efogdev.mpris-timer
         - io.github.flattool.Warehouse
         - io.github.seadve.Mousai
