@@ -5,7 +5,7 @@ After=suspend.target gnome-session-wayland@gnome.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/gnome-monitor-config set -LpM DP-1 -m 2560x1440@119.998
+ExecStart=/usr/bin/gnome-monitor-config set -LpM DP-1 -m 2560x1440@119.998+vrr
 
 [Install]
 WantedBy=suspend.target graphical-session.target

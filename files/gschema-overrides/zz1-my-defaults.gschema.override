@@ -27,6 +27,7 @@ focus-mode='sloppy'
 
 [org.gnome.mutter]
 check-alive-timeout=uint32 20000
+experimental-features=['scale-monitor-framebuffer', 'variable-refresh-rate', 'xwayland-native-scaling']
 
 [org.gnome.Ptyxis]
 cursor-shape='underline'
