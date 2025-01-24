@@ -51,4 +51,4 @@ echo "Installing lnav"
 api_url=https://api.github.com/repos/tstack/lnav/releases/latest
 download_url=$(curl -fsS $api_url | grep -o "https.*x86_64.zip")
 wget -nv -P /dev/shm/lnav "$download_url"
-unzip -jqd /usr/bin /dev/shm/lnav/* lnav-*/lnav
+unzip -jqd /usr/bin /dev/shm/lnav/\* \*/lnav
