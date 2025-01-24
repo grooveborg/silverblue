@@ -55,6 +55,12 @@ echo "Installing chezmoi"
 wget -nv https://github.com/twpayne/chezmoi/releases/latest/download/chezmoi-linux-amd64 -O /usr/bin/chezmoi
 chmod 755 /usr/bin/chezmoi
 
+# Install dive
+echo "Installing dive"
+api_url=https://api.github.com/repos/wagoodman/dive/releases/latest
+download_url=$(curl -fsS $api_url | grep -o "https.*linux_amd64.tar.gz")
+curl -fsSL "$download_url" | tar -xzf - -C /usr/bin dive
+
 # Install The Logfile Navigator
 echo "Installing lnav"
 api_url=https://api.github.com/repos/tstack/lnav/releases/latest
