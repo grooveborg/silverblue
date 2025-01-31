@@ -43,12 +43,8 @@ curl -fsSL "$download_url" | tar -xJf - -C /usr/bin 7zz
 
 # Install Adwaita Fonts
 echo "Installing Adwaita Fonts"
-download_urls=(
-    'https://gitlab.gnome.org/api/v4/projects/32009/jobs/artifacts/main/download?job=mono'
-    'https://gitlab.gnome.org/api/v4/projects/32009/jobs/artifacts/main/download?job=sans'
-)
-printf "%s\n" "${download_urls[@]}" | wget -nv -P /dev/shm/adwaita -i -
-unzip -jqd /usr/share/fonts/adwaita-fonts /dev/shm/adwaita/\*
+download_url=https://download.gnome.org/sources/adwaita-fonts/48/adwaita-fonts-48.0.tar.xz
+curl -fsSL "$download_url" | tar -xJf - -C /usr/share/fonts --one-top-level=adwaita-fonts
 
 # Install chezmoi
 echo "Installing chezmoi"
